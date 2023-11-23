@@ -1,15 +1,19 @@
+
 public class recursion {
+
   public static void main(String[] args) {
-
-    //call your recursion fuction
-    //print result
-
-   }
-    
-    public double.... recursionFunction {
-      //implement your case algorithm
-      return....
-    }
-  
+      String originalString = "Hi Barbie!";
+      String reversedString = reverseString(originalString);
+      System.out.println("Original string: " + originalString);
+      System.out.println("Reversed string: " + reversedString);
+  }
+  public static String reverseString(String str) {
+      if (str.isEmpty()) {
+          return str;
+      }
+      return reverseString(str.substring(1)) + str.charAt(0);
+  }
 }
-    
+
+
+  
